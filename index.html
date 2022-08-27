@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./assets/css/main.css">
+    <link rel="shortcut icon" href="./assets/img/icon-logo.png" type="image/x-icon">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700&display=swap" rel="stylesheet">
+    <title>Fast Burguer</title>
+</head>
+
+<body>
+    <header class="header-wrapper">
+        <div class="header">
+            <div class="checkbox-container">
+                <div class="checkbox-wrapper">
+                    <input type="checkbox" id="toggle">
+                    <label class="checkbox" for="toggle">
+                        <div class="trace"></div>
+                        <div class="trace"></div>
+                        <div class="trace"></div>
+                    </label>
+                    <div class="menu"></div>
+                    <nav class="menu-items">
+                        <ul>
+                            <li>
+                                <a href="index.html">Home</a>
+                            </li>
+                            <li>
+                                <a href="https://www.instagram.com" target="_blank">Instagram</a>
+                            </li>
+                            <li>
+                                <a href="https://www.instagram.com/dacotinha_" target="_blank">Contato</a>
+                            </li>
+                        </ul>
+                    </nav>
+                </div>
+            </div>
+        </div>
+        <h1>Fast Burguer Brasil</h1>
+        <h2>Agora em delivery também</h2>
+        <div class="social-media">
+            <a href="#campoLanches">Lanches</a>
+            <a href="#campoBebidas">Bebidas</a>
+        </div>
+    </header>
+
+    <main>
+
+        <section class="card" id="campoLanches">
+            <div>
+                <img src="./assets/img/lanche-4.png" alt="Misto quente">
+                <h2>Misto Quente</h2>
+                <p>Ingredientes: </p>
+                <span>R$ 4,00</span>
+                <button class="add" id="misto">Adicionar</button>
+            </div>
+            <div>
+                <img src="./assets/img/lanche-1.png" alt="Hamburguer">
+                <h2>Bomba</h2>
+                <p>Ingredientes: </p>
+                <span>R$ 8,00</span>
+                <button class="add" id="bomba">Adicionar</button>
+            </div>
+            <div>
+                <img src="./assets/img/lanche-2.png" alt="Hamburguer">
+                <h2>X-Tudo</h2>
+                <p>Ingredientes: </p>
+                <span>R$ 17,00</span>
+                <button class="add" id="x-tudo">Adicionar</button>
+            </div>
+            <div>
+                <img src="./assets/img/lanche-3.png" alt="Hamburguer">
+                <h2>X-Tudo de Frango</h2>
+                <p>Ingredientes: </p>
+                <span>R$ 7,99</span>
+                <button class="add" id="x-tudoFrango">Adicionar</button>
+            </div>
+            <div>
+                <img src="./assets/img/lanche-5.png" alt="Hamburguer">
+                <h2>X-Brocado</h2>
+                <p>Ingredientes: </p>
+                <span>R$ 25,00</span>
+                <button class="add" id="x-brocado">Adicionar</button>
+            </div>
+        </section>
+        <br>
+        <br>
+        <br>
+        <section class="bebidas" id="campoBebidas">
+            <div>
+                <img src="./assets/img/bebida-2.png" alt="bebida">
+                <h2>Heineken</h2>
+                <span>R$ 8,00</span>
+                <button class="add" id="heineken">Adicionar</button>
+            </div>
+            <div>
+                <img src="./assets/img/bebida-3.png" alt="refrigerante">
+                <h2>Refrigerante lata</h2>
+                <span>R$ 5,00</span>
+                <button class="add" id="refrigerante">Adicionar</button>
+            </div>
+            <div>
+                <img src="./assets/img/bebida.png" alt="suco">
+                <h2>Suco Natural</h2>
+                <span>R$ 6,00</span>
+                <button class="add" id="suco">Adicionar</button>
+            </div>
+        </section>
+
+        <br>
+        <br>
+        <br>
+
+        <div id="fade" class="hide"></div>
+        <div id="modal" class="hidden">
+            <input type="text" id="lanche">
+            <label for="">Quantidade</label>
+            <input type="number" name="qtd" id="qtd-lanche">
+            <button id="add-carrinho">Adicionar ao carrinho</button>
+        </div>
+    </main>
+
+    <br>
+    <br>
+    <br>
+    <div>
+        <div id="carrinho"></div>
+    </div>
+
+    <div>
+        <div id="quantidade"></div>
+    </div>
+
+    <div>
+        <div id="valor"></div>
+    </div>
+
+    <div>
+        <div id="valorTotal"></div>
+    </div>
+
+
+    <script src="./assets/js/main.js"></script>
+</body>
+
+</html>
